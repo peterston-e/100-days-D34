@@ -40,3 +40,7 @@ class QuizzInterface:
     def get_next_question(self):
         q_text = self.quiz.next_question()
         self.canvas.itemconfig(self.question_text, text=q_text)
+
+    # Type hints *** just an example
+    def greeting(self, name: str) -> str:
+        return "hello" + name
